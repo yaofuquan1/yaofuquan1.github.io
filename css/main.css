@@ -1145,6 +1145,7 @@ pre .javascript .function {
   margin: 0 auto;
   max-width: 120px;
   padding: 2px;
+  border-radius: 50%;
 }
 .site-author-name {
   color: var(--text-color);
@@ -1172,7 +1173,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #402e58;
+  background: #8ed62a;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2274,17 +2275,6 @@ ul.breadcrumb li + li:last-child {
     display: none;
   }
 }
-.menu-item-active a::after {
-  background: #bbb;
-  border-radius: 50%;
-  content: ' ';
-  height: 6px;
-  margin-top: -3px;
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  width: 6px;
-}
 .menu .menu-item {
   display: block;
   margin: 0;
@@ -2329,10 +2319,6 @@ ul.breadcrumb li + li:last-child {
 .sub-menu .menu-item span.exturl:hover {
   background: transparent;
   color: #fc6423;
-}
-.sub-menu .menu-item a::after,
-.sub-menu .menu-item span.exturl::after {
-  content: initial !important;
 }
 .sub-menu .menu-item-active a {
   border-bottom-color: #fc6423;
@@ -2560,4 +2546,61 @@ ul.breadcrumb li + li:last-child {
   .pagination {
     margin: 8px 0 0;
   }
+}
+body {
+  background: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+}
+.content-wrap {
+  opacity: 0.9;
+}
+.site-brand-container {
+  background: #50616d;
+}
+.site-meta .site-title {
+  font-weight: bold;
+}
+.headband {
+  background: #eea2a4;
+}
+.header-inner {
+  background: rgba(255,255,255,0.9);
+}
+.sidebar {
+  opacity: 0.9;
+}
+/*-------彩色标签云-------*/
+.tag-cloud-tags {
+/*font-family: Helvetica, Tahoma, Arial;*/
+/*font-weight: 100;*/
+  text-align: center;
+  counter-reset: tags;
+}
+.tag-cloud-tags a {
+  border-radius: 6px;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin: 8px 5px 0px 0px;
+}
+.tag-cloud-tags a:before {
+  content: "☁";
+}
+.tag-cloud-tags a:hover {
+  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.4);
+  transform: scale(1.1);
+/*box-shadow: 10px 10px 15px 2px rgba(0,0,0,.12), 0 0 6px 0 rgba(104, 104, 105, 0.1);*/
+  transition-duration: 0.15s;
+}
+.main-inner .post-block {
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 7px #c06f98;
+  -moz-box-shadow: 3px 3px 7px rgba(238,162,164,0.5);
 }
