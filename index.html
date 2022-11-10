@@ -123,7 +123,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">2</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">3</span></a>
 
   </li>
         <li class="menu-item menu-item-留言">
@@ -159,6 +159,80 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/11/10/hexo%E7%94%9F%E6%88%90%E5%8A%A8%E7%94%BB%E4%BA%BA%E7%89%A9/hexo%E7%94%9F%E6%88%90%E5%8A%A8%E7%94%BB%E4%BA%BA%E7%89%A9/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Meteor">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="巨蟹座">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/11/10/hexo%E7%94%9F%E6%88%90%E5%8A%A8%E7%94%BB%E4%BA%BA%E7%89%A9/hexo%E7%94%9F%E6%88%90%E5%8A%A8%E7%94%BB%E4%BA%BA%E7%89%A9/" class="post-title-link" itemprop="url">hexo生成动画人物</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-11-10 09:21:29 / 修改时间：09:26:24" itemprop="dateCreated datePublished" datetime="2022-11-10T09:21:29+08:00">2022-11-10</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>1.安装hexo-helper-live2d</p>
+<p>$ npm install –save hexo-helper-live2d</p>
+<p>2.安装live2d</p>
+<p>其中替换成想要的，比如我安装的的是live2d-widget-model-wanko</p>
+<p>当然，还有很多的model可供选择，参考</p>
+<p>xiazeyu&#x2F;live2d-widget-models</p>
+<p>hexo live2d插件 2.0 !</p>
+<p>$ npm install <live2d-widget-model><br>Click and drag to move</p>
+<p>安装live2d-widget-model-wanko</p>
+<p>$ npm install live2d-widget-model-wanko</p>
+<p>3.配置</p>
+<p>在Hexo站点配置文件_config.yml，或者主题配置文件_config.yml中添加如下配置</p>
+<p>至于每个配置项的作用看名字就很清楚，也可以修改值然后部署看下效果</p>
+<p>更多详细的说明和配置，详见官网EYHN&#x2F;hexo-helper-live2d</p>
+<p>live2d:<br>  enable: true<br>  scriptFrom: local<br>  pluginRootPath: live2dw&#x2F;<br>  pluginJsPath: lib&#x2F;<br>  pluginModelPath: assets&#x2F;<br>  tagMode: false<br>  log: false<br>  model:<br>    use: live2d-widget-model-wanko<br>  display:<br>    position: right<br>    width: 150<br>    height: 300<br>  mobile:<br>    show: true<br>  react:<br>    opacity: 0.7</p>
+<p>重新hexo d -g即可看到效果</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -466,7 +540,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -573,5 +647,5 @@
 <!-- 页面点击小红心 -->
 <script type="text/javascript" src="/js/clicklove.js"></script>
 
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":200,"height":350},"mobile":{"show":false},"log":false});</script></body>
 </html>
