@@ -22,15 +22,23 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="巨蟹座">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="Hexo的NexT主题可以天然支持友链，即在NexT主题的配置文件_config.yml中有一个# Blog rolls块，可以添加友链，然后在左边栏的底端会显示它们。但这样的问题在于边栏的空间有限，友链比较多的话会影响布局，而且分散主题。于是考虑单独创建一个友链页面，搜索发现已经有成型的方案，大体思路与 # Hexo添加自定义分类菜单项并定制页面布局 一样，增加菜单项和友链模版，再修改主页模板。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo友情链接">
+<meta property="og:url" content="http://example.com/2022/11/06/hexo%E5%8D%9A%E5%AE%A2%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/index.html">
 <meta property="og:site_name" content="巨蟹座">
+<meta property="og:description" content="Hexo的NexT主题可以天然支持友链，即在NexT主题的配置文件_config.yml中有一个# Blog rolls块，可以添加友链，然后在左边栏的底端会显示它们。但这样的问题在于边栏的空间有限，友链比较多的话会影响布局，而且分散主题。于是考虑单独创建一个友链页面，搜索发现已经有成型的方案，大体思路与 # Hexo添加自定义分类菜单项并定制页面布局 一样，增加菜单项和友链模版，再修改主页模板。">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://pic.imeitou.com/uploads/allimg/2016063009/eqksptvlh11.jpg">
+<meta property="og:image" content="http://pic.imeitou.com/uploads/allimg/2016063009/fitdj4o0lnq.jpg">
+<meta property="og:image" content="http://example.com/2022/11/06/hexo%E5%8D%9A%E5%AE%A2%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/%7Bavatarurl%7D">
+<meta property="article:published_time" content="2022-11-06T10:57:05.000Z">
+<meta property="article:modified_time" content="2022-11-10T00:38:56.253Z">
 <meta property="article:author" content="Meteor">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://pic.imeitou.com/uploads/allimg/2016063009/eqksptvlh11.jpg">
 
-<link rel="canonical" href="http://example.com/archives/">
+<link rel="canonical" href="http://example.com/2022/11/06/hexo%E5%8D%9A%E5%AE%A2%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/">
 
 
 <script id="page-configurations">
@@ -38,12 +46,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>归档 | 巨蟹座</title>
+  <title>Hexo友情链接 | 巨蟹座</title>
   
 
 
@@ -157,70 +165,205 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 2 篇日志。 继续努力。</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/11/06/hexo%E5%8D%9A%E5%AE%A2%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Meteor">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="巨蟹座">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Hexo友情链接
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-11-06 18:57:05" itemprop="dateCreated datePublished" datetime="2022-11-06T18:57:05+08:00">2022-11-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-11-10 08:38:56" itemprop="dateModified" datetime="2022-11-10T08:38:56+08:00">2022-11-10</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
+        <p>Hexo的NexT主题可以天然支持友链，即在NexT主题的配置文件_config.yml中有一个# Blog rolls块，可以添加友链，然后在左边栏的底端会显示它们。但这样的问题在于边栏的空间有限，友链比较多的话会影响布局，而且分散主题。于是考虑单独创建一个友链页面，搜索发现已经有成型的方案，大体思路与 # Hexo添加自定义分类菜单项并定制页面布局 一样，增加菜单项和友链模版，再修改主页模板。这样做可以解决问题，但是不够优雅，属于侵入式的定制（直接修改了主题文件模板），但绝大多数人都采用了这种方案 :-)。</p>
+<p>可行方案选择<br>经过思考发现大概有几个方案：</p>
+<p>1.直接使用NexT主题的Blog roll<br>2.定制友情链接模版<br>3.在markdown中内嵌友链css和html<br>第一种方案简单粗暴，但扩展性差；第二种方案能达到目的，但实现步骤繁琐，另外以后升级NexT主题就麻烦了，大概率需要手动merge代码，因为修改了NexT主题的模版文件；最后一种方案非常完美，非侵入式实现，不动源码，只改配置文件，扩展方便，copy一段html即可新增友链，唯一的缺点就是需要内嵌一段css，稍显丑陋。</p>
+<p>在采用这种方法之前还走过一点弯路，考虑直接做一个不被渲染的HTML（利用 skip_render）放到source文件夹中，但发现这样做会丢失页面框架，与其他页面风格不一致。</p>
+<p>新建一个post</p>
+<p>在source文件夹下建一个文件夹links，里面放一个文件index.md，即友链页面：</p>
+<div class="post-body">
+   <div id="links">
+      <style>
+         .links-content{
+         margin-top:1rem;
+         }
+         .link-navigation::after {
+         content: " ";
+         display: block;
+         clear: both;
+         }
+         .card {
+         width: 45%;
+         font-size: 1rem;
+         padding: 10px 20px;
+         border-radius: 4px;
+         transition-duration: 0.15s;
+         margin-bottom: 1rem;
+         display:flex;
+         }
+         .card:nth-child(odd) {
+         float: left;
+         }
+         .card:nth-child(even) {
+         float: right;
+         }
+         .card:hover {
+         transform: scale(1.1);
+         box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+         }
+         .card a {
+         border:none;
+         }
+         .card .ava {
+         width: 3rem!important;
+         height: 3rem!important;
+         margin:0!important;
+         margin-right: 1em!important;
+         border-radius:4px;
+         }
+         .card .card-header {
+         font-style: italic;
+         overflow: hidden;
+         width: 100%;
+         }
+         .card .card-header a {
+         font-style: normal;
+         color: #2bbc8a;
+         font-weight: bold;
+         text-decoration: none;
+         }
+         .card .card-header a:hover {
+         color: #d480aa;
+         text-decoration: none;
+         }
+         .card .card-header .info {
+         font-style:normal;
+         color:#a3a3a3;
+         font-size:14px;
+         min-width: 0;
+         overflow: hidden;
+         white-space: nowrap;
+         }
+      </style>
+      <div class="links-content">
+         <div class="link-navigation">
+            <div class="card">
+               <img class="ava" src="http://pic.imeitou.com/uploads/allimg/2016063009/eqksptvlh11.jpg" />
+               <div class="card-header">
+                  <div>
+                     <a target="_blank" rel="noopener" href="https://yaofuquan1.github.io/">My’s blog</a>
+                  </div>
+                  <div class="info">我的小站。</div>
+               </div>
+            </div>
+            <div class="card">
+               <img class="ava" src="http://pic.imeitou.com/uploads/allimg/2016063009/fitdj4o0lnq.jpg" />
+               <div class="card-header">
+                  <div>
+                     <a target="_blank" rel="noopener" href="https://cjldegh.github.io">Lee's Blog</a>
+                 </div>
+                 <div class="info">小陈</div>
+                </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<p>其实就是一段css再接上几个div，以后每加一个友链，只需要复制如下一段即可：</p>
+<div class="card">
+   <img class="ava" src="{avatarurl}" />
+   <div class="card-header">
+      <div>
+         <a href="{link}">{name}</a>
+      </div>
+      <div class="info">{description}</div>
+   </div>
+</div>
+
+<p>之后在每次hexo g时，就会生成一个links&#x2F;index.html文件。同时由于它不在source&#x2F;_posts文件中，hexo不会把它当成一篇新博客加入首页。</p>
+<p>增加菜单项</p>
+<p>在NexT主题的配置文件_config.yml中找到menu部分，加一行即可：</p>
+<p>…<br>menu:<br>  tags: &#x2F;tags&#x2F; || tags<br>  categories: &#x2F;categories&#x2F; || th<br>…<br>  Links: &#x2F;links&#x2F; || link<br>…</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-11-06T18:57:05+08:00"
-              content="2022-11-06">
-          11-06
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/11/06/hexo%E5%8D%9A%E5%AE%A2%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/" itemprop="url">
-            <span itemprop="name">Hexo友情链接</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-11-06T18:57:05+08:00"
-              content="2022-11-06">
-          11-06
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/11/06/hexo%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" itemprop="url">
-            <span itemprop="name">姚福泉的第一篇博客</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
+    
+    
+    <script src="//sdk.jinrishici.com/v2/browser/jinrishici.js"></script>
+<script>
+  jinrishici.load((result) => {
+    let jrsc = document.getElementById('jrsc');
+    const data = result.data;
+    let author = data.origin.author;
+    let title = '《' + data.origin.title + '》';
+    let content = data.content.substr(0, data.content.length - 1);
+    let dynasty = data.origin.dynasty.substr(0, data.origin.dynasty.length - 1);
+    jrsc.innerText = content + ' ——' + dynasty + '·' + author + title;
+  });
+</script>
+<div style="text-align: center"><span id="jrsc" >正在加载今日诗词....</span></div>
 
 
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/11/06/hexo%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" rel="prev" title="姚福泉的第一篇博客">
+      <i class="fa fa-chevron-left"></i> 姚福泉的第一篇博客
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-  </div>
+      </footer>
+    
+  </article>
   
   
-  
-
   
 
 
