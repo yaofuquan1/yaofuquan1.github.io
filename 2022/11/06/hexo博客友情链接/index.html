@@ -51,6 +51,16 @@
     lang   : 'zh-CN'
   };
 </script>
+<script> 
+ (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
 
   <title>Hexo友情链接 | 巨蟹座</title>
   
@@ -147,7 +157,7 @@
   </li>
         <li class="menu-item menu-item-爱礼">
 
-    <a href="https://yaofuquan1.github.io/LoveHeart/" rel="noopener" target="_blank"><i class="fa fa-fw fa-heart"></i>爱礼</a>
+    <a href="/test/" rel="section"><i class="fa fa-fw fa-heart"></i>爱礼</a>
 
   </li>
   </ul>
@@ -393,13 +403,10 @@
 
         
     <div class="post-nav">
+      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2022/11/06/hexo%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" rel="prev" title="姚福泉的第一篇博客">
-      <i class="fa fa-chevron-left"></i> 姚福泉的第一篇博客
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2022/11/10/hexo%E7%94%9F%E6%88%90%E5%8A%A8%E7%94%BB%E4%BA%BA%E7%89%A9/hexo%E7%94%9F%E6%88%90%E5%8A%A8%E7%94%BB%E4%BA%BA%E7%89%A9/" rel="next" title="hexo生成动画人物">
-      hexo生成动画人物 <i class="fa fa-chevron-right"></i>
+    <a href="/2022/11/06/hexo%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" rel="next" title="姚福泉的第一篇博客">
+      姚福泉的第一篇博客 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
