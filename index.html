@@ -128,12 +128,12 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">3</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">4</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">5</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">6</span></a>
 
   </li>
         <li class="menu-item menu-item-留言">
@@ -174,6 +174,80 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/11/18/MySQL%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5-CRUD-%E8%AF%A6%E8%A7%A3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Meteor">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="巨蟹座">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/11/18/MySQL%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5-CRUD-%E8%AF%A6%E8%A7%A3/" class="post-title-link" itemprop="url">MySQL增删改查(CRUD)详解</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-11-18 16:56:03" itemprop="dateCreated datePublished" datetime="2022-11-18T16:56:03+08:00">2022-11-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-11-21 08:01:23" itemprop="dateModified" datetime="2022-11-21T08:01:23+08:00">2022-11-21</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h4 id="一、新增（Create-）语法："><a href="#一、新增（Create-）语法：" class="headerlink" title="一、新增（Create****）语法：**"></a>一<strong>、<strong><strong>新增（</strong></strong>Create****）</strong>语法：**</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">INSERT [INTO] table_name</span><br><span class="line"> [(column [, column] ...)]</span><br><span class="line"> <span class="built_in">VALUES</span> (value_list) [, (value_list)] ...</span><br></pre></td></tr></table></figure>
+
+<h6 id="1、首先创建一个学生表"><a href="#1、首先创建一个学生表" class="headerlink" title="1、首先创建一个学生表"></a><strong>1、首先创建一个学生表</strong></h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">DROP TABLE IF EXISTS student;</span><br><span class="line">CREATE TABLE <span class="title function_">student</span> <span class="params">(</span></span><br><span class="line"><span class="params">   id INT,</span></span><br><span class="line"><span class="params">   sn INT comment <span class="string">&#x27;学号&#x27;</span>,</span></span><br><span class="line"><span class="params">   name VARCHAR(<span class="number">20</span>)</span> comment <span class="string">&#x27;姓名&#x27;</span>,</span><br><span class="line">   qq_mail <span class="title function_">VARCHAR</span><span class="params">(<span class="number">20</span>)</span> comment <span class="string">&#x27;QQ邮箱&#x27;</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/11/18/MySQL%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5-CRUD-%E8%AF%A6%E8%A7%A3/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -396,71 +470,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/11/06/hexo%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Meteor">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="巨蟹座">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/11/06/hexo%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" class="post-title-link" itemprop="url">姚福泉的第一篇博客</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-11-06 18:57:05" itemprop="dateCreated datePublished" datetime="2022-11-06T18:57:05+08:00">2022-11-06</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-11-16 17:49:57" itemprop="dateModified" datetime="2022-11-16T17:49:57+08:00">2022-11-16</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>1.hexo部署到github中出现的问题及解决办法 1<br>git报错fatal: unable to access ‘<a target="_blank" rel="noopener" href="https://github.com/hxx.git/&#39;">https://github.com/hxx.git/&#39;</a>: LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443<br>解决办法：<br>我通过:<br>    <code>git config --global http.proxy</code><br>查询到当前设置了代理，所以我取消这个设置：<br>    <code>git config --global --unset http.proxy</code>   </p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/11/06/hexo%E5%8D%9A%E5%AE%A2%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -518,6 +527,71 @@
             </div>
           <!--/noindex-->
         
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/11/06/hexo%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Meteor">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="巨蟹座">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/11/06/hexo%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" class="post-title-link" itemprop="url">姚福泉的第一篇博客</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-11-06 18:57:05" itemprop="dateCreated datePublished" datetime="2022-11-06T18:57:05+08:00">2022-11-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-11-16 17:49:57" itemprop="dateModified" datetime="2022-11-16T17:49:57+08:00">2022-11-16</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>1.hexo部署到github中出现的问题及解决办法 1<br>git报错fatal: unable to access ‘<a target="_blank" rel="noopener" href="https://github.com/hxx.git/&#39;">https://github.com/hxx.git/&#39;</a>: LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443<br>解决办法：<br>我通过:<br>    <code>git config --global http.proxy</code><br>查询到当前设置了代理，所以我取消这个设置：<br>    <code>git config --global --unset http.proxy</code>   </p>
+
       
     </div>
 
@@ -600,14 +674,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
