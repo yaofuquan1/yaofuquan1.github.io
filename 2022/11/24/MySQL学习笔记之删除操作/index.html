@@ -22,19 +22,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"default"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="love line with Rongrong   @font-face { 	font-family: digit; 	src: url(&#39;digital-7_mono.ttf&#39;) format(&quot;truetype&quot;); }               	 		         	我很努力的             要成为一个             优秀的男朋友">
-<meta property="og:type" content="website">
-<meta property="og:title" content="恋爱记">
-<meta property="og:url" content="http://example.com/test/index.html">
+  <meta name="description" content="MySQL删除操作（delete、truncate和drop区别说明）一、deletedelete主要用于删除数据，即将表中所有数据都删除了，但该表依然存在。 123456两种方式使用delete：1、从表中删除特定的行（where指定条件）删除学生表中id为2的记录：DELETE FROM student WHERE ID&#x3D;2;2、从表中删除所有的行（不带where的）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL学习笔记之删除操作">
+<meta property="og:url" content="http://example.com/2022/11/24/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8B%E5%88%A0%E9%99%A4%E6%93%8D%E4%BD%9C/index.html">
 <meta property="og:site_name" content="巨蟹座">
-<meta property="og:description" content="love line with Rongrong   @font-face { 	font-family: digit; 	src: url(&#39;digital-7_mono.ttf&#39;) format(&quot;truetype&quot;); }               	 		         	我很努力的             要成为一个             优秀的男朋友">
+<meta property="og:description" content="MySQL删除操作（delete、truncate和drop区别说明）一、deletedelete主要用于删除数据，即将表中所有数据都删除了，但该表依然存在。 123456两种方式使用delete：1、从表中删除特定的行（where指定条件）删除学生表中id为2的记录：DELETE FROM student WHERE ID&#x3D;2;2、从表中删除所有的行（不带where的）">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-11-09T16:34:27.000Z">
-<meta property="article:modified_time" content="2022-11-17T00:20:17.381Z">
+<meta property="article:published_time" content="2022-11-24T06:27:32.000Z">
+<meta property="article:modified_time" content="2022-11-24T11:30:01.460Z">
 <meta property="article:author" content="Meteor">
+<meta property="article:tag" content="MySQL">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/test/">
+<link rel="canonical" href="http://example.com/2022/11/24/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8B%E5%88%A0%E9%99%A4%E6%93%8D%E4%BD%9C/">
 
 
 <script id="page-configurations">
@@ -42,14 +43,14 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 <script> 
  (function(){
-        if('200073'){
-            if (prompt('请输入文章密码') !== '200073'){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
                 alert('密码错误！');
                 history.back();
             }
@@ -57,8 +58,7 @@
     })();
 </script>
 
-  <title>恋爱记 | 巨蟹座
-</title>
+  <title>MySQL学习笔记之删除操作 | 巨蟹座</title>
   
 
 
@@ -176,152 +176,146 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
-          <div class="content page posts-expand">
+          <div class="content post posts-expand">
             
 
     
-    
-    
-    <div class="post-block" lang="zh-CN">
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/11/24/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8B%E5%88%A0%E9%99%A4%E6%93%8D%E4%BD%9C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Meteor">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="巨蟹座">
+    </span>
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          MySQL学习笔记之删除操作
+        </h1>
 
-<h1 class="post-title" itemprop="name headline">恋爱记
-</h1>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
 
-<div class="post-meta">
+              <time title="创建时间：2022-11-24 14:27:32 / 修改时间：19:30:01" itemprop="dateCreated datePublished" datetime="2022-11-24T14:27:32+08:00">2022-11-24</time>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h4 id="MySQL删除操作（delete、truncate和drop区别说明）"><a href="#MySQL删除操作（delete、truncate和drop区别说明）" class="headerlink" title="MySQL删除操作（delete、truncate和drop区别说明）"></a>MySQL删除操作（delete、truncate和drop区别说明）</h4><h5 id="一、delete"><a href="#一、delete" class="headerlink" title="一、delete"></a>一、delete</h5><p>delete主要用于删除数据，即将表中所有数据都删除了，但该表依然存在。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">两种方式使用delete：</span><br><span class="line"></span><br><span class="line">1、从表中删除特定的行（where指定条件）删除学生表中id为2的记录：</span><br><span class="line">DELETE FROM student WHERE ID=2;</span><br><span class="line"></span><br><span class="line">2、从表中删除所有的行（不带where的）</span><br></pre></td></tr></table></figure>
+
+<h5 id="二、truncate"><a href="#二、truncate" class="headerlink" title="二、truncate"></a>二、truncate</h5><p>truncate主要用于删除数据，但保留表结构，且数据不可恢复，该命令也不能添加查询条件。truncate的删除原理是重新创建一个表（不包含数据），然后将原来的表删除。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">格式:</span><br><span class="line">truncate table 表名</span><br><span class="line"></span><br><span class="line">TRUNCATE table student;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">truncate在功能上与不带 where 子句的delete语句相同：二者均删除表中的全部行。但 truncate比 delete速度快，且使用的系统和事务日志资源少。delete语句每次删除一行，并在事务日志中为所删除的每行记录一项。truncate通过释放存储表数据所用的数据页来删除数据，并且只在事务日志中记录页的释放。</span><br></pre></td></tr></table></figure>
+
+<h5 id="三、drop"><a href="#三、drop" class="headerlink" title="三、drop"></a>三、drop</h5><p>drop主要用于删除结构，即删除的时候不仅删除了表中的数据，还删除了表结构。如果我们要删除数据库或数据表，一般都会使用drop来删除。（使用drop删除表后，数据库中查询不到该表）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">格式:</span><br><span class="line">drop table 表名</span><br><span class="line"></span><br><span class="line">DROP database student;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h5><ul>
+<li>当你不再需要该表时，用 drop；</li>
+<li>当你仍要保留该表，但要删除所有记录时， 用 truncate；</li>
+<li>当你要删除部分记录时，用delete。</li>
+</ul>
+<p>————————————————<br>引用：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_45639224/article/details">https://blog.csdn.net/weixin_45639224/article/details</a></p>
+
+    </div>
+
+    
+    
+    <script src="//sdk.jinrishici.com/v2/browser/jinrishici.js"></script>
+<script>
+  jinrishici.load((result) => {
+    let jrsc = document.getElementById('jrsc');
+    const data = result.data;
+    let author = data.origin.author;
+    let title = '《' + data.origin.title + '》';
+    let content = data.content.substr(0, data.content.length - 1);
+    let dynasty = data.origin.dynasty.substr(0, data.origin.dynasty.length - 1);
+    jrsc.innerText = content + ' ——' + dynasty + '·' + author + title;
+  });
+</script>
+<div style="text-align: center"><span id="jrsc" >正在加载今日诗词....</span></div>
+
+<!-- 文章末尾分割线 -->
+<div>
+    <hr/>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Meteor
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://example.com/2022/11/24/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8B%E5%88%A0%E9%99%A4%E6%93%8D%E4%BD%9C/" title="MySQL学习笔记之删除操作">http://example.com/2022/11/24/MySQL学习笔记之删除操作/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/MySQL/" rel="tag"><i class="fa fa-tag"></i> MySQL</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/11/24/%E7%94%9F%E6%88%90UUID/" rel="prev" title="生成UUID">
+      <i class="fa fa-chevron-left"></i> 生成UUID
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-          
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>love line with Rongrong</title>
-
-<style type="text/css">
-@font-face {
-	font-family: digit;
-	src: url('digital-7_mono.ttf') format("truetype");
-}
-</style>
-
-<link href="css/default.css" type="text/css" rel="stylesheet">
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/garden.js"></script>
-<script type="text/javascript" src="js/functions.js"></script>
-
-</head>
-
-<body>
-<!-- BGM区域 
-<embed src="https://img-blog.nos-eastchina1.126.net/backimg/U%20are%20so%20beautiful.mp3" width="0" height="0" loop="-1" autostart="true"> </embed>
--->
-
-<!-- 文字区域 -->
-<div id="mainDiv">
-	<div id="content">
-		<div id="code">
-        	我很努力的<br>
-            要成为一个<br>
-            <span class="keyword">优秀的男朋友</span><br><br>
-
-            你也很努力的<br>
-            在成为一个<br>
-            <span class="keyword">优秀的女朋友的路上</span><br><br>
-
-            这种感觉<br>
-            真的是<br>
-             <span class="keyword">太好了</span><br><br>
-
-            唯有梦想与好姑娘<br>
-            <span class="keyword">不可辜负</span><br><br>
-
-             <hr>
-   			<span class="keyword">I want to say:</span><br>
-			乐乐<br>
-            <span class="keyword"> I love you! </span><br>
-            -- 姚先森<br>
-
-
-		</div>
-		<div id="loveHeart">
-			<canvas id="garden"></canvas>
-			<div id="words">
-				<!-- <div id="messages">
-					相遇，相识，相恋...
-					<div id="elapseClock"></div>
-				</div> -->
-			</div>
-		</div>
-	</div>
-</div>
-
-<script type="text/javascript">
-var offsetX = $("#loveHeart").width() / 2;
-var offsetY = $("#loveHeart").height() / 2 - 55;
-var together = new Date();
-
-//起始时间 
-together.setFullYear(2022, 7, 5);//1.23；3.29 年月日
-together.setHours(12);
-together.setMinutes(0);
-together.setSeconds(0);
-together.setMilliseconds(0);
-
-if (!document.createElement('canvas').getContext) {
-	var msg = document.createElement("div");
-	msg.id = "errorMsg";
-	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
-	document.body.appendChild(msg);
-	$("#code").css("display", "none")
-	$("#copyright").css("position", "absolute");
-	$("#copyright").css("bottom", "10px");
-	document.execCommand("stop");
-} else {
-	setTimeout(function () {
-		startHeartAnimation();
-	}, 5000);
-
-	timeElapse(together);
-	setInterval(function () {
-		timeElapse(together);
-	}, 500);
-
-	adjustCodePosition();
-	$("#code").typewriter();
-}
-</script>
-
-<!-- 附加信息-->
-<div style="text-align:center;clear:both">
-<!-- <p>Made for Rongrong Wang, made by <a href="https://github.com/yaofuquan1" target="_blank">xiao yao<a /></p>
-<p>Copyright © 2022 - 2032 AomanHao. All Rights Reserved. Designed by <a href="https://yaofuquan1.github.io/" target="_blank">十年<a /> </p> -->
-<p><a href="https://yaofuquan1.github.io/LoveHeart/" target="_blank">进入回忆<a></a></a></p>
-</div>
-</body>
-</html>
-
-      </div>
-      
-      
-      
-    </div>
-    
-
-    
-    
-    
 
 
           </div>
@@ -372,6 +366,7 @@ if (!document.createElement('canvas').getContext) {
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#MySQL%E5%88%A0%E9%99%A4%E6%93%8D%E4%BD%9C%EF%BC%88delete%E3%80%81truncate%E5%92%8Cdrop%E5%8C%BA%E5%88%AB%E8%AF%B4%E6%98%8E%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">MySQL删除操作（delete、truncate和drop区别说明）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%80%E3%80%81delete"><span class="nav-number">1.1.</span> <span class="nav-text">一、delete</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BA%8C%E3%80%81truncate"><span class="nav-number">1.2.</span> <span class="nav-text">二、truncate</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%89%E3%80%81drop"><span class="nav-number">1.3.</span> <span class="nav-text">三、drop</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E6%80%BB%E7%BB%93"><span class="nav-number">1.4.</span> <span class="nav-text">四、总结</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
